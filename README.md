@@ -22,7 +22,7 @@ Step 2. Add the dependency:
 
 ```
 dependencies {
-    implementation 'com.github.guy-4444:StepProgress-Android:Tag'
+    implementation 'com.github.guy-4444:StepProgress-Android:1.00.00'
 }
 ```
 ## Usage
