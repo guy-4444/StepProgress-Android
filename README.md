@@ -34,11 +34,11 @@ dependencies {
 
 ###### StepProgress xml parameters:
 ```xml
-    **app:inActive_step_color="#0073FF"**
-    **app:active_step_color="#CD35A3D5"**
-    **app:line_width="5dp"**
-    **app:line_padding="10dp"**
-    **app:step_orientation="horizontal"**
+    app:inActive_step_color="#0073FF"
+    app:active_step_color="#CD35A3D5"
+    app:line_width="5dp"
+    app:line_padding="10dp"
+    app:step_orientation="horizontal"
 ```
 ###### StepProgress Control ways:
 ```java
