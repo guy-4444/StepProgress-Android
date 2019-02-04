@@ -3,9 +3,8 @@
 [![](https://jitpack.io/v/guy-4444/StepProgress-Android.svg)](https://jitpack.io/#guy-4444/StepProgress-Android)
 [![API](https://img.shields.io/badge/API-15%2B-green.svg?style=flat)]()
 
-Library to insert a widget that shows progress in steps.
-
-Library is very simple to operate and implement the pace of progress.
+Widget that shows progress in steps.
+The library is very simple to operate and implement.
 There is an implementation for completion and also for skipping.
 
 ![device-2018-06-06-144912](https://github.com/guy-4444/StepProgress-Android/blob/master/device-2019-02-04-144302.png?raw=true)
@@ -13,9 +12,9 @@ There is an implementation for completion and also for skipping.
 Add it in your root build.gradle at the end of repositories:
 ```
 allprojects {
-	repositories {
-			maven { url 'https://jitpack.io' }
-	}
+    repositories {
+	maven { url 'https://jitpack.io' }
+    }
 }
 ```
 
@@ -23,16 +22,16 @@ Step 2. Add the dependency:
 
 ```
 dependencies {
-	        implementation 'com.github.guy-4444:StepProgress-Android:Tag'
+    implementation 'com.github.guy-4444:StepProgress-Android:Tag'
 }
 ```
 ## Usage
 
 ###### StepProgress Constructor:
 ```java
-        StepsProgress steps1;
-        steps1 = (StepsProgress) findViewById(R.id.steps1);
-        steps1.initSteps(6);  // number of steps
+    StepsProgress steps1;
+    steps1 = (StepsProgress) findViewById(R.id.steps1);
+    steps1.initSteps(6);  // number of steps
 ```
 
 ###### StepProgress xml parameters (Optional):
@@ -45,8 +44,8 @@ dependencies {
 ```
 ###### StepProgress Control ways:
 ```java
-       steps1.stepCompleted();
-       steps1.stepSkipped();
+   steps1.stepCompleted();
+   steps1.stepSkipped();
 ```
 
 ## License
