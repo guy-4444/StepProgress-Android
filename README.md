@@ -9,7 +9,8 @@ There is an implementation for completion and also for skipping.
 
 ![device-2018-06-06-144912](https://github.com/guy-4444/StepProgress-Android/blob/master/device-2019-02-04-144302.png?raw=true)
 
-Add it in your root build.gradle at the end of repositories:
+## Setup
+Step 1. Add it in your root build.gradle at the end of repositories:
 ```
 allprojects {
     repositories {
