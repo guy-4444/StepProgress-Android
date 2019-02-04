@@ -8,13 +8,102 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <guy4444.stepprogress.StepsProgress
+            android:id="@+id/steps1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"
+            app:inActive_step_color="@color/colorAccent"
+            app:active_step_color="#67676767"
+            app:line_width="4dp"
+            app:line_padding="4dp"
+            app:step_orientation="horizontal"/>
+
+        <guy4444.stepprogress.StepsProgress
+            android:id="@+id/steps2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/steps1"
+            app:inActive_step_color="@color/colorAccent"
+            app:active_step_color="#67676767"
+            app:line_width="5dp"
+            app:line_padding="0dp"
+            app:step_orientation="horizontal"/>
+
+        <guy4444.stepprogress.StepsProgress
+            android:id="@+id/steps3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/steps2"
+            app:inActive_step_color="#FF0000"
+            app:active_step_color="#B0FF0000"
+            app:line_width="5dp"
+            app:line_padding="10dp"
+            app:step_orientation="horizontal"/>
+
+        <guy4444.stepprogress.StepsProgress
+            android:id="@+id/steps4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/steps3"
+            app:inActive_step_color="#0073FF"
+            app:active_step_color="#CD35A3D5"
+            app:line_width="5dp"
+            app:line_padding="10dp"
+            app:step_orientation="horizontal"/>
+
+
+        <guy4444.stepprogress.StepsProgress
+            android:id="@+id/steps5"
+            android:layout_width="40dp"
+            android:layout_height="240dp"
+            android:layout_below="@id/steps4"
+            android:layout_marginTop="3dp"
+            app:step_orientation="vertical"
+            app:line_padding="0dp"
+            app:line_width="1dp" />
+
+        <guy4444.stepprogress.StepsProgress
+            android:id="@+id/steps6"
+            android:layout_width="50dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/steps4"
+            android:layout_toRightOf="@id/steps5"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            app:inActive_step_color="#FF8BC34A"
+            app:active_step_color="#FFCDDC39"
+            app:step_orientation="vertical"
+            app:line_padding="0dp"
+            app:line_width="1dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/fab_skip"
+            android:src="@drawable/ic_check" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_skip" />
+
+    </RelativeLayout>
+
 
 </android.support.constraint.ConstraintLayout>
