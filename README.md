@@ -40,7 +40,7 @@ dependencies {
 **app:line_padding="10dp"**
 **app:step_orientation="horizontal"**
 
-###### StepView Control ways:
+###### StepProgress Control ways:
 ```java
        steps1.stepCompleted();
        steps1.stepSkipped();
