@@ -32,7 +32,7 @@ dependencies {
         steps1.initSteps(6);  // number of steps
 ```
 
-###### StepProgress xml parameters:
+###### StepProgress xml parameters (Optional):
 ```xml
     app:inActive_step_color="#0073FF"
     app:active_step_color="#CD35A3D5"
