@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         fab_next = findViewById(R.id.fab_next);
         fab_skip = findViewById(R.id.fab_skip);
 
-
         steps1 = (StepsProgress) findViewById(R.id.steps1);
         steps1.initSteps(6);
 
