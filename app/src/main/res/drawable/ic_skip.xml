@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="298.678dp"
-    android:height="298.678dp"
-    android:viewportWidth="298.678"
-    android:viewportHeight="298.678">
+    android:width="489dp"
+    android:height="489dp"
+    android:viewportWidth="489"
+    android:viewportHeight="489">
+    <!--<path-->
+    <!--android:fillColor="#000000"-->
+    <!--android:pathData="M244.5,0C109.3,0,0,109.3,0,244.5S109.3,489,244.5,489S489,379.7,489,244.5S379.7,0,244.5,0z M244.5,448.4 c-112.4,0-203.9-91.5-203.9-203.9S132.1,40.6,244.5,40.6s203.9,91.5,203.9,203.9S356.9,448.4,244.5,448.4z" />-->
 
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M 59.421 0.839 L 0 0.839 L 118.842 148.439 L 0 297.839 L 59.421 297.839 L 178.263 148.439 Z" />
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M 179.836 0.839 L 120.415 0.839 L 239.257 148.439 L 120.415 297.839 L 179.836 297.839 L 298.678 148.439 Z" />
+
+    <group
+        android:translateX="-50"
+        android:translateY="-50"
+        android:scaleX="1.2"
+        android:scaleY="1.2">
+
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M358.9,130.1c-8.3-8.3-20.8-8.3-29.1,0l-85.3,85.3l-85.3-85.3c-8.3-8.3-20.8-8.3-29.1,0s-8.3,20.8,0,29.1l85.5,85.1 l-85.5,85.5c-8.3,8.3-8.3,20.8,0,29.1c4.2,3.1,17.7,10.4,29.1-1l85.3-84.9l85.3,84.9c11.5,11.5,25,4.2,29.1,1 c8.3-8.3,8.3-20.8,0-29.1l-85.5-85.5l85.5-85.1C367.3,150.9,367.3,138.4,358.9,130.1z" />
+
+    </group>
 </vector>

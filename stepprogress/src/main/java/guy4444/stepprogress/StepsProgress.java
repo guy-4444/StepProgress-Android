@@ -146,6 +146,7 @@ public class StepsProgress extends LinearLayout {
      * @param view       View to set
      */
     private void setStepStatus(STEP_STATE step_state, View view) {
+        Log.d("pttt", "currentStep= " + currentStep);
         switch (step_state) {
             case ACTIVE:
                 ((ImageView)view).setColorFilter(inActiveStepColor, android.graphics.PorterDuff.Mode.SRC_IN);
@@ -212,6 +213,13 @@ public class StepsProgress extends LinearLayout {
         stepInactive();
     }
 
+    private void stepInactive() {
+        if (currentStep < numOfSteps) {
+            View view = this.findViewWithTag(currentStep);
+            setStepStatus(STEP_STATE.INACTIVE, view);
+        }
+    }
+
     /**
      * Function to skip & move to the next step
      */
@@ -236,10 +244,16 @@ public class StepsProgress extends LinearLayout {
         stepInactive();
     }
 
-    private void stepInactive() {
-        if (currentStep < numOfSteps) {
+    /**
+     * Function to move back to the previous step
+     */
+    public void backPreviousStep() {
+        if (currentStep > 0  &&  currentStep < numOfSteps) {
             View view = this.findViewWithTag(currentStep);
-            setStepStatus(STEP_STATE.INACTIVE, view);
+            setStepStatus(STEP_STATE.ACTIVE, view);
+
+            currentStep--;
+            stepInactive();
         }
     }
 }

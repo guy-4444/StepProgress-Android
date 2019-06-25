@@ -10,8 +10,9 @@ import guy4444.stepprogress.StepsProgress;
 
 public class MainActivity extends AppCompatActivity {
 
-    FloatingActionButton fab_next;
+    FloatingActionButton fab_back;
     FloatingActionButton fab_skip;
+    FloatingActionButton fab_next;
 
     StepsProgress steps1;
     StepsProgress steps2;
@@ -30,8 +31,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        fab_next = findViewById(R.id.fab_next);
+        fab_back = findViewById(R.id.fab_back);
         fab_skip = findViewById(R.id.fab_skip);
+        fab_next = findViewById(R.id.fab_next);
 
         steps1 = (StepsProgress) findViewById(R.id.steps1);
         steps1.initSteps(6);
@@ -72,6 +74,18 @@ public class MainActivity extends AppCompatActivity {
                 steps4.stepSkipped();
                 steps5.stepSkipped();
                 steps6.stepSkipped();
+            }
+        });
+
+        fab_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                steps1.backPreviousStep();
+                steps2.backPreviousStep();
+                steps3.backPreviousStep();
+                steps4.backPreviousStep();
+                steps5.backPreviousStep();
+                steps6.backPreviousStep();
             }
         });
     }
