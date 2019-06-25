@@ -11,7 +11,7 @@ Add it in your root build.gradle at the end of repositories:
 ```
 allprojects {
 	repositories {
-			maven { url 'https://jitpack.io' }
+		maven { url 'https://jitpack.io' }
 	}
 }
 ```
@@ -20,7 +20,7 @@ Step 2. Add the dependency:
 
 ```
 dependencies {
-	        implementation 'com.github.guy-4444:StepProgress-Android:Tag'
+	implementation 'com.github.guy-4444:StepProgress-Android:1.00.01'
 }
 ```
 ## Usage
