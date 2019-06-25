@@ -63,6 +63,7 @@ public class StepsProgress extends LinearLayout {
 
     private int activeStepColor;
     private int inActiveStepColor;
+    private int skipStepColor;
 
     /**
      * Function to handel view attributes
@@ -80,6 +81,7 @@ public class StepsProgress extends LinearLayout {
             linePadding = typedArray.getDimensionPixelSize(R.styleable.StepsProgress_line_padding, 20);
             activeStepColor = typedArray.getColor(R.styleable.StepsProgress_inActive_step_color, Color.parseColor("#0000FF"));
             inActiveStepColor = typedArray.getColor(R.styleable.StepsProgress_active_step_color, Color.DKGRAY);
+            skipStepColor = typedArray.getColor(R.styleable.StepsProgress_skip_step_color, activeStepColor);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -154,7 +156,7 @@ public class StepsProgress extends LinearLayout {
                 ((ImageView)view).setImageResource(R.drawable.ic_marker_inactive);
                 break;
             case SKIPPED:
-                ((ImageView)view).setColorFilter(activeStepColor, android.graphics.PorterDuff.Mode.SRC_IN);
+                ((ImageView)view).setColorFilter(skipStepColor, android.graphics.PorterDuff.Mode.SRC_IN);
                 ((ImageView)view).setImageResource(R.drawable.ic_marker_skipped);
                 break;
             case COMPLETED:

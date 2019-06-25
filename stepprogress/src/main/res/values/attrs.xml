@@ -7,6 +7,7 @@
         <attr name="line_width" format="dimension" />
         <attr name="active_step_color" format="color"/>
         <attr name="inActive_step_color" format="color"/>
+        <attr name="skip_step_color" format="color"/>
         <attr name="step_orientation" format="enum">
             <enum name="horizontal" value="0"/>
             <enum name="vertical" value="1"/>

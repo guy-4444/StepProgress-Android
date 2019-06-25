@@ -64,9 +64,10 @@
         <guy4444.stepprogress.StepsProgress
             android:id="@+id/steps5"
             android:layout_width="40dp"
-            android:layout_height="240dp"
+            android:layout_height="340dp"
             android:layout_below="@id/steps4"
             android:layout_marginTop="3dp"
+            app:skip_step_color="#FF0000"
             app:step_orientation="vertical"
             app:line_padding="0dp"
             app:line_width="1dp" />
