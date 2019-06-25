@@ -34,11 +34,29 @@ dependencies {
 
 ###### StepProgress xml parameters:
 
+```xml
+        <guy4444.stepprogress.StepsProgress
+            android:id="@+id/steps5"
+            android:layout_width="40dp"
+            android:layout_height="340dp"
+            android:layout_below="@id/steps4"
+            android:layout_marginTop="3dp"
+            app:skip_step_color="#FF0000"
+            app:step_orientation="vertical"
+            app:line_padding="0dp"
+            app:line_width="1dp" />
+```
+
 **app:inActive_step_color="#0073FF"**
+
 **app:active_step_color="#CD35A3D5"**
+
 **app:skip_step_color="#FF0000"**
+
 **app:line_width="5dp"**
+
 **app:line_padding="10dp"**
+
 **app:step_orientation="horizontal"**
 
 ###### StepView Control ways:
