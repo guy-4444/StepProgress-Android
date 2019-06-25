@@ -20,7 +20,7 @@ Step 2. Add the dependency:
 
 ```
 dependencies {
-	implementation 'com.github.guy-4444:StepProgress-Android:1.00.01'
+	implementation 'com.github.guy-4444:StepProgress-Android:1.00.02'
 }
 ```
 ## Usage
@@ -63,6 +63,7 @@ dependencies {
 ```java
        steps1.stepCompleted();
        steps1.stepSkipped();
+       steps1.backPreviousStep();
 ```
 
 ## What's new
