@@ -5,7 +5,7 @@
 
 Library to insert a widget that shows progress in steps.
 
-![device-2018-06-06-144912](https://github.com/guy-4444/StepProgress-Android/blob/master/device-2019-02-04-144302.png?raw=true)
+![device-2018-06-06-144912](https://github.com/guy-4444/StepProgress-Android/blob/master/device-2019-02-04-144303.png?raw=true)
 
 Add it in your root build.gradle at the end of repositories:
 ```
