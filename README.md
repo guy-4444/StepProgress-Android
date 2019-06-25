@@ -66,8 +66,11 @@ dependencies {
 ```
 
 ## What's new
-
+1.00.01:
 1. separate skip indicator color.
+
+1.00.02:
+2. implement back to previous step.
 
 
 ## License
