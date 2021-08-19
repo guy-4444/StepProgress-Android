@@ -3,13 +3,14 @@ package guy4444.stepprogress;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
-import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import androidx.annotation.DrawableRes;
 
 public class StepsProgress extends LinearLayout {
 
